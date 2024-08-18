@@ -55,7 +55,14 @@ replace_content('_posts')
 ```shell
 ulimit -n 10000
 ```
-如果还报错就把这个数改大点
+如果还报错就把这个数改大点      
+
+如果
+```
+ATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
+```
+可以使用 -c 参数限制构建的线程数    
+例如`hexo g -c 8`
 
 ## 参考资料
 [User Objects - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/sysinfo/user-objects)
